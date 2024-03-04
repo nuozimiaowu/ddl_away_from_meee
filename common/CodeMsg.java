@@ -1,10 +1,6 @@
-package com.example.project4.common;
+package com.example.cooperation.common;
 
-/**
- * @author ：Mr.ZJW
- * @date ：Created 2022/2/28 10:26
- * @description：返回提示
- */
+
 public class CodeMsg {
     private int retCode;
     private String message;

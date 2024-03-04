@@ -1,4 +1,4 @@
-package com.example.project4.utils;
+package com.example.cooperation.utils;
 
 import com.auth0.jwt.JWT;
 import org.springframework.web.context.request.RequestContextHolder;

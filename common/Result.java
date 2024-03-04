@@ -1,4 +1,4 @@
-package com.example.project4.common;
+package com.example.cooperation.common;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

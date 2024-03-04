@@ -1,14 +1,14 @@
-package com.example.project4.Interceptor;
+package com.example.cooperation.Interceptor;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTDecodeException;
 import com.auth0.jwt.exceptions.JWTVerificationException;
-import com.example.project4.annotation.PassToken;
-import com.example.project4.annotation.UserLoginToken;
-import com.example.project4.pojo.UserDto;
-import com.example.project4.service.UserService;
+import com.example.cooperation.annotation.PassToken;
+import com.example.cooperation.annotation.UserLoginToken;
+import com.example.cooperation.pojo.User;
+import com.example.cooperation.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -59,7 +59,7 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
                 } catch (JWTDecodeException j) {
                     throw new RuntimeException("401");
                 }
-                UserDto user = userService.findUserById(userId);
+                User user = userService.findUserById(userId);
                 if (user == null) {
                     throw new RuntimeException("用户不存在，请重新登录");
                 }

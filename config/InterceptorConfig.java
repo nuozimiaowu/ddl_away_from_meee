@@ -1,6 +1,6 @@
-package com.example.project4.config;
+package com.example.cooperation.config;
 
-import com.example.project4.Interceptor.AuthenticationInterceptor;
+import com.example.cooperation.Interceptor.AuthenticationInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.format.FormatterRegistry;
